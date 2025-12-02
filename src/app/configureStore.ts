@@ -1,10 +1,12 @@
 import {configureStore} from '@reduxjs/toolkit'
 import {combineReducers} from "redux";
-import {TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
+import {type TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 import {alertsSlice} from "@chumsinc/alert-list";
+import cookiesSlice from "@/slices/cookies";
 
 const rootReducer = combineReducers({
-    [alertsSlice.name]: alertsSlice.reducer,
+    [alertsSlice.reducerPath]: alertsSlice.reducer,
+    [cookiesSlice.reducerPath]: cookiesSlice.reducer,
 });
 
 const store = configureStore({

@@ -1,43 +1,51 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-    <meta charSet="utf-8" />
-    <title>App Name - Localhost</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://intranet.chums.com/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://intranet.chums.com/node_modules/bootstrap/dist/css/bootstrap.css">
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Cookie Consent History / localhost</title>
+    <meta name="description" content="Cookie Consent History for CHUMS B2B & Intranet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://intranet.chums.com/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://intranet.chums.com/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://intranet.chums.com/css/intranet.css?v=1494436263">
     <link rel="stylesheet" type="text/css" href="https://intranet.chums.com/css/chums.css">
+    <link rel="icon" type="image/x-icon" href="https://intranet.chums.com/favicon.ico"/>
     <script src="https://intranet.chums.com/js/preferred-theme.js"></script>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar navbar-chums navbar-expand-lg navbar-light bg-body-tertiary scroll-top">
-            <div class="site-logo">
-                <div class="logo-center">
-                    <a href="/">
-                        <img class="logo" id="navbar-logo" alt="Chums Logo"
-                             src="https://intranet.chums.com/images/logos/Chums-Logo-Badge-Red-RGB.png"
-                             style="margin-top: 0;">
-                    </a>
-                </div>
+<header class="site-header">
+    <nav class="navbar navbar-chums navbar-expand-lg navbar-light bg-body-tertiary scroll-top">
+        <div class="site-logo">
+            <div class="logo-center">
+                <a href="/">
+                    <img class="logo" id="navbar-logo" alt="Chums Logo"
+                         src="https://intranet.chums.com/images/logos/Chums-Logo-Badge-Red-RGB.png"
+                         style="margin-top: 0;">
+                </a>
             </div>
-        </nav>
-    </header>
-    <main class="container-fluid">
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <div>
         <div>
-            <div>
-                <h1 id="top-title">[App Name]</h1>
-                <div id="PageDescription">
-                    <span id="PageDescriptionText"></span>
-                </div>
+            <h1 id="top-title">Cookie Consent History</h1>
+            <div id="PageDescription">
+                <span id="PageDescriptionText"></span>
             </div>
         </div>
-        <div id="app">
-            <div class="alert alert-info"><strong>Loading</strong> app.</div>
+    </div>
+    <div class="row g-3">
+        <div class="col-xs-12 col-md-6 col-xl-4" id="cookie-consent-history-app"></div>
+        <div class="col-xs-12 col-md-6 col-xl-8">
+            Other content
         </div>
-    </main>
+    </div>
+</main>
+<script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
